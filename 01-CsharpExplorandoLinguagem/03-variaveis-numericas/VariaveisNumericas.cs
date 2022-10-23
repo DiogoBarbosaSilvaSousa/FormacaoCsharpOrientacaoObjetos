@@ -20,6 +20,8 @@ namespace _01_CsharpExplorandoLinguagem._03_variaveis_numericas
             salario = VariavelPontoFlutuante(4600.5);            
             Console.WriteLine("O salário é " + salario);
 
+            TiposNumericos();
+
             Helper.Fim();
         }
 
@@ -35,6 +37,33 @@ namespace _01_CsharpExplorandoLinguagem._03_variaveis_numericas
             double numero;
             numero = numero_double;
             return numero;
+        }
+
+        public static object ConversaoNumerica()
+        {
+            return 0;
+        }
+
+        public static void TiposNumericos()
+        {
+            Console.WriteLine("\n");
+
+            int numero_inteiro = 8000;
+            Console.WriteLine("Numero inteiro: " + numero_inteiro);
+
+            float numero_real_com_precisao_menor = 1.60f;
+            Console.WriteLine("Numero real com precisão menor: " + numero_real_com_precisao_menor);
+
+            double numero_real = 1.80;
+            Console.WriteLine("Numero real: " + numero_real);
+            
+            long numero_grande = 3000000;
+            Console.WriteLine("Numero grande: " + numero_grande);
+            
+            short numero_pequeno = 1500;
+            Console.WriteLine("Numero pequeno: " + numero_pequeno);
+
+            Console.WriteLine("\n");
         }
     }
 }
